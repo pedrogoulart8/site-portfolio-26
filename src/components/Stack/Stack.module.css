@@ -1,0 +1,48 @@
+.section {
+  /* default bg-primary */
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.categoryIcon {
+  color: var(--accent);
+}
+
+.categoryLabel {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .categories {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

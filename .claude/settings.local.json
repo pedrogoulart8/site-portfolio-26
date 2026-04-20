@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(cp \"C:/Users/goula/OneDrive/Área de Trabalho/VIDEOS PRONTOS/GIFS/video-completo-financas-ezgif.com-video-to-gif-converter.gif\" \"C:/Program Files \\(x86\\)/Pastas Antigas/Goulart PC/PROGRAMAÇÃO/SITE PEDRO 2026/portfolio-pedro-goulart/public/projects/financas-demo.gif\")",
+      "Bash(cp \"C:/Users/goula/OneDrive/Área de Trabalho/VIDEOS PRONTOS/GIFS/ezgif.com-video-to-gif-converter.gif\" \"C:/Program Files \\(x86\\)/Pastas Antigas/Goulart PC/PROGRAMAÇÃO/SITE PEDRO 2026/portfolio-pedro-goulart/public/projects/youtube-demo.gif\")",
+      "Bash(cp \"C:/Users/goula/OneDrive/Área de Trabalho/VIDEOS PRONTOS/GIFS/ezgif.com-video-to-gif-converter \\(1\\).gif\" \"C:/Program Files \\(x86\\)/Pastas Antigas/Goulart PC/PROGRAMAÇÃO/SITE PEDRO 2026/portfolio-pedro-goulart/public/projects/frete-demo.gif\")",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

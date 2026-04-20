@@ -1,0 +1,134 @@
+/* Terminal always renders with dark theme regardless of site theme */
+
+.terminal {
+  font-family: 'Fira Code', 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  overflow: hidden;
+  width: 100%;
+  background-color: #161b22;
+}
+
+.terminal[data-replay='true'] {
+  cursor: pointer;
+}
+
+/* ── Title bar ── */
+.titleBar {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #1c2128;
+  border-bottom: 1px solid #30363d;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dotRed    { background-color: #ff5f57; }
+.dotYellow { background-color: #febc2e; }
+.dotGreen  { background-color: #28c840; }
+
+.titleText {
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  color: #6e7681;
+  letter-spacing: 0.06em;
+}
+
+.titleSpacer {
+  width: 42px;
+  flex-shrink: 0;
+}
+
+/* ── Body ── */
+.body {
+  padding: 24px;
+  line-height: 1.65;
+  background-color: #161b22;
+}
+
+/* ── Prompt line ── */
+.promptLine {
+  display: flex;
+  align-items: baseline;
+}
+
+.prompt {
+  color: #e6edf3;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.command {
+  color: var(--accent);
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  background-color: #e6edf3;
+  opacity: 0;
+  vertical-align: text-bottom;
+  margin-left: 1px;
+  flex-shrink: 0;
+}
+
+.cursorOn {
+  opacity: 1;
+}
+
+/* ── Output lines ── */
+.emptyLine {
+  height: 0.65em;
+}
+
+.lineName {
+  color: #e6edf3;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+}
+
+.lineRole {
+  color: #8b949e;
+  font-size: 13px;
+}
+
+.lineInfo {
+  display: flex;
+  align-items: baseline;
+  white-space: pre;
+}
+
+.infoArrow {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.infoWord {
+  color: #6e7681;
+  flex-shrink: 0;
+}
+
+.infoValue {
+  color: #e6edf3;
+  white-space: normal;
+}
+
+.lineSuccess {
+  color: var(--accent);
+}
