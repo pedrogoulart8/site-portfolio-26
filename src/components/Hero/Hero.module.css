@@ -14,15 +14,31 @@
   width: 100%;
   display: grid;
   grid-template-columns: 60fr 40fr;
-  gap: 64px;
+  grid-template-rows: auto auto;
+  gap: 0 64px;
   align-items: center;
 }
 
-/* Left — text content */
-.content {
+/* Left top — title + subtitle */
+.contentTop {
+  grid-column: 1;
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  align-self: end;
+  padding-bottom: 24px;
+}
+
+/* Left bottom — description + actions */
+.contentBottom {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-self: start;
+  padding-top: 0;
 }
 
 .eyebrow {
@@ -69,6 +85,8 @@
 
 /* Right — terminal */
 .terminalWrapper {
+  grid-column: 2;
+  grid-row: 1 / 3;
   width: 100%;
   max-width: 460px;
   align-self: center;
@@ -101,34 +119,62 @@
 @media (max-width: 1024px) {
   .inner {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 48px;
     text-align: left;
   }
 
+  .contentTop {
+    grid-column: 1;
+    grid-row: auto;
+    align-self: auto;
+    padding-bottom: 0;
+  }
+
   .terminalWrapper {
+    grid-column: 1;
+    grid-row: auto;
     max-width: 100%;
     order: -1;
+  }
+
+  .contentBottom {
+    grid-column: 1;
+    grid-row: auto;
+    align-self: auto;
+    padding-top: 0;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 100svh;
+    min-height: unset;
+    align-items: flex-start;
   }
 
   .inner {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 32px;
+    padding-bottom: 40px;
     text-align: center;
+    gap: 20px;
+  }
+
+  .contentTop {
+    order: 1;
+    padding-bottom: 0;
+  }
+
+  .terminalWrapper {
+    display: none;
+  }
+
+  .contentBottom {
+    order: 3;
+    padding-top: 0;
   }
 
   .actions {
     justify-content: center;
-  }
-
-  .terminalWrapper {
-    max-width: 100%;
-    margin: 0 auto;
   }
 
   .scrollHint {

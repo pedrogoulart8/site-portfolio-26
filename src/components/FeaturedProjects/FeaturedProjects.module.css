@@ -172,6 +172,10 @@
   }
 
   .number {
-    font-size: 3rem;
+    display: none;
+  }
+
+  .titleRow {
+    justify-content: center;
   }
 }
