@@ -13,11 +13,11 @@ export default function Hero() {
           <p className={styles.subtitle}>
             Desenvolvedor júnior.
             <br />
-            Experiência em gestão e e-commerce.
+            React • TypeScript • Node.js 
           </p>
 
           <p className={styles.description}>
-            Background em gestão e e-commerce, com foco em React, automação e IA.
+            Background em gestão e e-commerce, com foco em integrações, automação e IA.
           </p>
 
           <div className={styles.actions}>

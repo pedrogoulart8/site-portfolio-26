@@ -26,7 +26,7 @@ export const featuredProjects: Project[] = [
     number: '01',
     title: 'Gerenciador de Finanças Pessoais',
     description:
-      'App mobile-first de controle de gastos pessoais com extração automática por IA. Tiro foto do comprovante de Pix pelo celular, o app envia a imagem para a API do Claude (visão computacional), extrai automaticamente data, valor, destinatário e método de pagamento, e salva no banco de dados. Dashboard com seis visualizações: comparação mensal, gastos por categoria, série diária, curva cumulativa mês vs mês anterior, ranking dos maiores gastos e padrão por dia da semana. Instalável como PWA no celular e desktop.',
+      'Aplicativo de controle de gastos pessoais com leitura de notas fiscais e boletos por IA. O app possibilita tirar foto do comprovante de pagamento pelo celular e depois envia essa imagem para a API do Claude. A IA extrai automaticamente data, valor, destinatário e método de pagamento, e salva no banco de dados. Disponível painel de Dashboard com seis visualizações: comparação mensal, gastos por categoria, série diária, curva cumulativa mês vs mês anterior, ranking dos maiores gastos e padrão por dia da semana. Instalável como PWA no celular e desktop. ',
     stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Claude API', 'Tailwind', 'Tremor', 'PWA'],
     demoUrl: 'https://gastos-pessoais-red.vercel.app/',
     githubUrl: 'https://github.com/pedrogoulart8/gastos-pessoais',
@@ -38,7 +38,7 @@ export const featuredProjects: Project[] = [
     number: '02',
     title: 'YouTube Analytics Dashboard',
     description:
-      'Dashboard fullstack que consome a YouTube Data API v3 e exibe métricas reais de canais do YouTube. Quatro modos de uso: análise detalhada de canal com gráficos de performance, busca de vídeos com filtros, trending por região com distribuição por categoria, e comparador lado a lado de até 4 canais. Backend em Node.js com Fastify, cache Redis com fallback em memória, e validação com Zod.',
+      'Dashboard que consome dados do Youtube (YouTube Data API v3) e exibe métricas reais de canais do YouTube. Quatro modos: análise detalhada de canal com gráficos de performance, busca de vídeos com filtros, trending por região com distribuição por categoria, e comparador lado a lado de até 4 canais.',
     stack: ['React', 'TypeScript', 'Node.js', 'Fastify', 'Redis', 'YouTube Data API'],
     demoUrl: 'https://youtube-insights-pedrogoulart8s-projects.vercel.app/channel',
     githubUrl: 'https://github.com/pedrogoulart8/dashboard-youtube-api',
@@ -50,7 +50,7 @@ export const featuredProjects: Project[] = [
     number: '03',
     title: 'Automação de Cotação de Frete',
     description:
-      'Automação em produção real que eliminou processo 100% manual de cotação de frete em loja virtual. Script em Python + Playwright faz scraping do site da transportadora, atualiza a planilha de vendas via Google Sheets API e o n8n orquestra a execução agendada e notifica o gestor por email.',
+      'Automação que eliminou processo 100% manual de cotação de frete por pedido em loja virtual real (Vesty Prata). Script em Python + Playwright faz scraping do site da transportadora, atualiza a planilha de vendas via Google Sheets API e o n8n orquestra a execução agendada e notifica o gestor por email.',
     stack: ['Python', 'Playwright', 'n8n', 'Google Sheets API', 'Gmail'],
     demoUrl: undefined,
     githubUrl: 'https://github.com/pedrogoulart8/frete-automatizado-ecommerce',
