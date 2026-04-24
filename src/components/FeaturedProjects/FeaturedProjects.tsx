@@ -24,18 +24,13 @@ export default function FeaturedProjects() {
 
             {/* Conteúdo */}
             <div className={styles.content}>
-              <div className={styles.contentTop}>
-                <span className={styles.number} aria-hidden="true">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <div className={styles.titleRow}>
-                  <h3 className={styles.title}>{project.title}</h3>
-                  {project.inProduction && (
-                    <span className={styles.badge} aria-label="Projeto em uso real">
-                      Em produção
-                    </span>
-                  )}
-                </div>
+              <div className={styles.titleRow}>
+                <h3 className={styles.title}>{project.title}</h3>
+                {project.inProduction && (
+                  <span className={styles.badge} aria-label="Projeto em uso real">
+                    Em produção
+                  </span>
+                )}
               </div>
 
               <p className={styles.description}>{project.description}</p>

@@ -2,90 +2,79 @@
   background-color: var(--bg-secondary);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 80px;
-  align-items: start;
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
+.about :global(.section-title) {
+  text-align: center;
 }
 
 .text {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  text-align: center;
 }
 
 .paragraph {
   font-size: 1.0625rem;
   color: var(--text-secondary);
   line-height: 1.8;
-  max-width: 720px;
 }
 
-/* Quick info sidebar */
-.sidebar {
+/* Info cards */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.infoCard {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 6px;
+  padding: 20px;
   background-color: var(--bg-primary);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  overflow: hidden;
-  align-self: start;
+  transition: border-color var(--transition-base);
 }
 
-.sidebarTitle {
-  font-family: var(--font-body);
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  padding: 16px 20px 12px;
-  border-bottom: 1px solid var(--border);
+.infoCard:hover {
+  border-color: rgba(16, 185, 129, 0.5);
 }
 
-.infoItem {
+.infoCardStatus {
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.infoCardStatus .infoCardValue {
+  color: var(--accent);
+}
+
+.infoCardIcon {
+  color: var(--accent);
   display: flex;
-  flex-direction: column;
-  gap: 2px;
-  padding: 14px 20px;
-  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
 }
 
-.infoItem:last-child {
-  border-bottom: none;
-}
-
-.infoLabel {
-  font-family: var(--font-body);
+.infoCardLabel {
   font-size: 0.6875rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
 
-.infoValue {
-  font-family: var(--font-body);
-  font-size: 0.9375rem;
+.infoCardValue {
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-primary);
   line-height: 1.4;
-}
-
-.statusBadge {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.875rem;
-  color: var(--accent);
-  font-weight: 500;
 }
 
 .statusDot {
@@ -99,30 +88,30 @@
 
 @keyframes pulse {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.6; transform: scale(0.85); }
+  50%       { opacity: 0.6; transform: scale(0.85); }
 }
 
-@media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
-
-  .sidebar {
-    max-width: 480px;
+@media (max-width: 900px) {
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .sidebar {
-    max-width: 100%;
-  }
-
-  .left {
+  .text {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
-  .paragraph {
-    max-width: 100%;
+  .infoCard {
+    padding: 16px;
   }
 }

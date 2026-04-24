@@ -1,48 +1,134 @@
 .section {
-  /* default bg-primary */
+  /* bg-primary default */
 }
 
-.categories {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+.section :global(.section-title) {
+  text-align: center;
 }
 
-.category {
+/* Outer card */
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-secondary);
+  padding: 40px 0;
+}
+
+/* Carousel container — clips tracks and hosts edge fades */
+.carouselOuter {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
-.categoryHeader {
+.carouselOuter::before,
+.carouselOuter::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carouselOuter::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-secondary) 0%, transparent 100%);
+}
+
+.carouselOuter::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-secondary) 0%, transparent 100%);
+}
+
+/* Tracks */
+.track {
+  display: flex;
+  width: max-content;
+  gap: 16px;
+  padding: 4px 8px;
+}
+
+.trackLeft {
+  animation: scrollLeft 35s linear infinite;
+}
+
+.trackRight {
+  animation: scrollRight 35s linear infinite;
+}
+
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+/* Skill item */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 22px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  min-width: 92px;
+  flex-shrink: 0;
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.item:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  transform: translateY(-2px);
+}
+
+.itemIcon {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-}
-
-.categoryIcon {
-  color: var(--accent);
-}
-
-.categoryLabel {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 600;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
   color: var(--text-primary);
-  letter-spacing: -0.01em;
 }
 
-.pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.itemName {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  font-family: var(--font-body);
+  letter-spacing: 0.01em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trackLeft,
+  .trackRight {
+    animation-play-state: paused;
+  }
 }
 
 @media (max-width: 768px) {
-  .categories {
-    grid-template-columns: 1fr;
-    gap: 32px;
+  .card {
+    padding: 32px 0;
+    border-radius: var(--radius-md);
+  }
+
+  .carouselOuter::before,
+  .carouselOuter::after {
+    width: 60px;
+  }
+
+  .item {
+    padding: 14px 18px;
+    min-width: 80px;
   }
 }
