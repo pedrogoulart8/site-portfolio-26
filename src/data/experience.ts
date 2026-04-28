@@ -13,7 +13,7 @@ export const experiences: Experience[] = [
     role: 'Desenvolvedor Júnior',
     company: 'Hook Digital',
     description:
-      'Desenvolvimento de sites, landing pages, blogs e módulos personalizados com forte integração ao HubSpot CMS. Stack: JavaScript, React, HubL, PHP.',
+      'Desenvolvimento de sites para empresas de diversos segmentos, incluindo sites dinâmicos com quiz interativo, formulários multi-etapa, landing pages e blogs. Realizei manutenção e evolução de projetos em React, PHP e WordPress, com forte integração ao HubSpot CMS. Stack: JavaScript, TypeScript, React, HubL, PHP.',
   },
   {
     id: 'dls',
@@ -21,7 +21,7 @@ export const experiences: Experience[] = [
     role: 'Desenvolvedor Júnior',
     company: 'Grupo DLS',
     description:
-      'Desenvolvimento de sites, landing pages e temas personalizados para WordPress com PHP, JavaScript, SCSS, ACF e Gulp.',
+      'Desenvolvimento e manutenção de sites para clientes de diferentes segmentos, com criação de temas personalizados (WordPress), sites e landing pages e funcionalidades dinâmicas. Stack: PHP, JavaScript, SCSS, ACF e Gulp.',
   },
   {
     id: 'ecommerce',
@@ -29,7 +29,7 @@ export const experiences: Experience[] = [
     role: 'Desenvolvedor Web & Tráfego Pago',
     company: 'E-commerce Próprio',
     description:
-      'Administração geral de e-commerce, desenvolvimento de sites e gestão de campanhas de tráfego pago. Stack: JavaScript, React, WordPress, Google Ads, Meta Ads, Google Analytics.',
+      'Desenvolvi e gerenciei e-commerce próprio do zero, atingindo mais de R$1M em faturamento. Responsável pelo desenvolvimento front-end, criação do site, landing pages de produtos, e gestão de campanhas de tráfego pago com Google Ads e Meta Ads. Stack: JavaScript, React, WordPress, HTML, CSS, Google Analytics, Facebook Ads, Google Ads.',
   },
   {
     id: 'casashopping',
@@ -37,6 +37,6 @@ export const experiences: Experience[] = [
     role: 'Coordenador Administrativo',
     company: 'CasaShopping',
     description:
-      'Coordenação de rotinas administrativas de uma equipe de 22 pessoas e forte participação no projeto de reestruturação do estacionamento do shopping, aumentando a receita mensal do setor.',
+      'Coordenação de equipe operacional e administrativa de 22 pessoas. Gestão financeira do estacionamento e forte participação no projeto de reestruturação do setor, resultando em aumento da receita mensal do shopping.',
   },
 ];
