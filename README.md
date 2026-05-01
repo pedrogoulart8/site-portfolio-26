@@ -1,4 +1,4 @@
-# Pedro Goulart — Portfolio
+# Pedro Goulart Portfolio
 
 Site portfólio pessoal. Construído com React 18 + TypeScript + Vite, estilizado com CSS Modules.
 
