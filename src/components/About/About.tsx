@@ -35,9 +35,7 @@ export default function About() {
 
       <div className={styles.text}>
         <p className={styles.paragraph}>
-          Trabalhei 10 anos com administração — incluindo coordenar uma equipe de 22 pessoas no maior
-          shopping de arquitetura da América Latina e gerenciar meu próprio e-commerce. A programação
-          apareceu na tentativa de criar um site melhor para a minha empresa. Funcionou. Nunca mais parei.
+          Trabalhei 10 anos com administração, incluindo coordenar uma equipe de 22 pessoas no maior shopping de arquitetura da América Latina e gerenciar meu próprio e-commerce, que faturou mais de R$1M. A programação apareceu na tentativa de criar um site melhor para a minha empresa. Funcionou. Nunca mais parei.
         </p>
         <p className={styles.paragraph}>
           Hoje trabalho com React, TypeScript e Node.js, mas o que mais gosto de fazer é identificar

@@ -10,7 +10,7 @@ export const experiences: Experience[] = [
   {
     id: 'hook',
     period: 'Out 2023 — Abr 2026',
-    role: 'Desenvolvedor Júnior',
+    role: 'Desenvolvedor Full Stack',
     company: 'Hook Digital',
     description:
       'Desenvolvimento de sites para empresas de diversos segmentos, incluindo sites dinâmicos com quiz interativo, formulários multi-etapa, landing pages e blogs. Realizei manutenção e evolução de projetos em React, PHP e WordPress, com forte integração ao HubSpot CMS. Stack: JavaScript, TypeScript, React, HubL, PHP.',
