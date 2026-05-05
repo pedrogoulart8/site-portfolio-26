@@ -6,6 +6,7 @@ export interface Project {
   stack: string[];
   demoUrl?: string;
   githubUrl?: string;
+  videoUrl?: string;
   imagePlaceholder: string;
   videoAlt?: string;
   inProduction?: boolean;
@@ -30,6 +31,7 @@ export const featuredProjects: Project[] = [
     stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Claude API', 'Tailwind', 'Tremor', 'PWA'],
     demoUrl: 'https://gastos-pessoais-red.vercel.app/',
     githubUrl: 'https://github.com/pedrogoulart8/gastos-pessoais',
+    videoUrl: 'https://www.youtube.com/watch?v=3A-2RZVFgvc',
     imagePlaceholder: 'Print do projeto aqui',
     videoAlt: 'Demo do Gerenciador de Finanças mostrando extração automática de comprovante por IA',
   },
@@ -42,6 +44,7 @@ export const featuredProjects: Project[] = [
     stack: ['React', 'TypeScript', 'Node.js', 'Fastify', 'Redis', 'YouTube Data API'],
     demoUrl: 'https://youtube-insights-pedrogoulart8s-projects.vercel.app/channel',
     githubUrl: 'https://github.com/pedrogoulart8/dashboard-youtube-api',
+    videoUrl: 'https://www.youtube.com/watch?v=Tp8oNIPAdDg',
     imagePlaceholder: 'Print do projeto aqui',
     videoAlt: 'Demo do YouTube Analytics Dashboard mostrando busca de canal e gráficos de performance',
   },
@@ -54,6 +57,7 @@ export const featuredProjects: Project[] = [
     stack: ['Python', 'Playwright', 'n8n', 'Google Sheets API', 'Gmail'],
     demoUrl: undefined,
     githubUrl: 'https://github.com/pedrogoulart8/frete-automatizado-ecommerce',
+    videoUrl: 'https://www.youtube.com/watch?v=GUJSCi-xjJI',
     imagePlaceholder: 'Print do projeto aqui',
     videoAlt: 'Demo da automação de cotação de frete rodando no terminal',
     inProduction: true,

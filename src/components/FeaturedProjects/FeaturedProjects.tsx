@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Play } from 'lucide-react'
 import { GithubIcon } from '../icons/SocialIcons'
 import { featuredProjects } from '../../data/projects'
 import ProjectVideo from '../ProjectVideo/ProjectVideo'
@@ -52,6 +52,18 @@ export default function FeaturedProjects() {
                   >
                     Acessar site
                     <ArrowRight size={15} aria-hidden="true" />
+                  </a>
+                )}
+                {project.videoUrl && (
+                  <a
+                    href={project.videoUrl}
+                    className={styles.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Ver vídeo demo de ${project.title}`}
+                  >
+                    <Play size={15} aria-hidden="true" />
+                    Ver demo
                   </a>
                 )}
                 {project.githubUrl && (
