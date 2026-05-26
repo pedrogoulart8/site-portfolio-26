@@ -10,7 +10,7 @@ export default function Hero() {
         <p className={styles.subtitle}>
           Desenvolvedor júnior.
           <br />
-          React • TypeScript • Node.js
+          React • TypeScript • Node.js • Next.js
         </p>
 
         <p className={styles.description}>

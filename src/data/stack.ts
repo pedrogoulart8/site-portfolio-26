@@ -13,7 +13,7 @@ export const stackCategories: StackCategory[] = [
   {
     id: 'backend',
     label: 'Back-end',
-    items: ['Node.js', 'PHP', 'HubL'],
+    items: ['Node.js', 'Next.js', 'PHP', 'HubL'],
   },
   {
     id: 'tools',

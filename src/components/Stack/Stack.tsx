@@ -125,6 +125,7 @@ const row1: SkillItem[] = [
   { name: 'SCSS',       icon: <Badge text="SCSS" bg="#CC6699" /> },
   { name: 'Tailwind',   icon: <TailwindIcon /> },
   { name: 'Node.js',    icon: <Badge text="Node" bg="#339933" /> },
+  { name: 'Next.js',    icon: <Badge text="Next" bg="#000000" /> },
   { name: 'PHP',        icon: <Badge text="PHP"  bg="#777BB4" /> },
   { name: 'HubL',       icon: <Badge text="HubL" bg="#FF7A59" /> },
 ]

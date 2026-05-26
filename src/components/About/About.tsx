@@ -40,7 +40,7 @@ export default function About() {
           apareceu na tentativa de criar um site melhor para a minha empresa. Funcionou. Nunca mais parei.
         </p>
         <p className={styles.paragraph}>
-          Trabalho principalmente com React, TypeScript e Node.js. Meu foco é resolver problemas
+          Trabalho principalmente com React, TypeScript, Node.js, Next.js, PHP, WordPress e HubSpot. Meu foco é resolver problemas
           operacionais com automação e IA.
         </p>
       </div>

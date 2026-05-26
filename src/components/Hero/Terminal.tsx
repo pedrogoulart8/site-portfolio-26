@@ -14,7 +14,7 @@ const LINES: Line[] = [
   { kind: 'empty' },
   { kind: 'name', text: 'Pedro Goulart' },
   { kind: 'empty' },
-  { kind: 'info', word: 'stack   ', value: 'React · TypeScript · Node.js' },
+  { kind: 'info', word: 'stack   ', value: 'React · TypeScript · Node.js · Next.js' },
   { kind: 'info', word: 'foco    ', value: 'Automação · IA · Fullstack' },
   { kind: 'info', word: 'status  ', value: 'Aberto a oportunidades' },
   { kind: 'info', word: 'projetos', value: '20+ publicados' },
@@ -113,7 +113,7 @@ export default function Terminal({ onComplete, replay = false }: Props) {
     <div
       className={styles.terminal}
       role="img"
-      aria-label="Terminal interativo: Pedro Goulart, desenvolvedor fullstack, stack React TypeScript Node.js, disponível para oportunidades no Rio de Janeiro"
+      aria-label="Terminal interativo: Pedro Goulart, desenvolvedor fullstack, stack React TypeScript Node.js Next.js, disponível para oportunidades no Rio de Janeiro"
       onClick={replay ? startAnimation : undefined}
       title={replay ? 'Clique para reiniciar' : undefined}
       data-replay={replay}
