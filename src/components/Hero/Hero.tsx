@@ -8,7 +8,7 @@ export default function Hero() {
         <h1 className={styles.title}>Pedro Goulart</h1>
 
         <p className={styles.subtitle}>
-          Desenvolvedor júnior.
+          Desenvolvedor.
           <br />
           React • TypeScript • Node.js • Next.js
         </p>
