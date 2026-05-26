@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
   {
     id: 'dls',
     period: 'Mai 2023 — Set 2023',
-    role: 'Desenvolvedor',
+    role: 'Desenvolvedor Front-end',
     company: 'Grupo DLS',
     description:
       'Desenvolvimento e manutenção de sites para clientes de diferentes segmentos, com criação de temas personalizados (WordPress), sites e landing pages e funcionalidades dinâmicas. Stack: PHP, JavaScript, SCSS, ACF e Gulp.',
